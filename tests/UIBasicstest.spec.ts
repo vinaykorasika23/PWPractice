@@ -1,7 +1,7 @@
-const {test,expect}=require('@playwright/test');
+import { test, expect } from '@playwright/test';
 
 
-test('first playwright test',async({browser})=>{
+test('first playwright test  @smoke',async({browser})=>{
  const context=await browser.newContext();
  const page=await context.newPage();
  await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
@@ -18,7 +18,7 @@ test('first playwright test',async({browser})=>{
 
 
 test('Nagative playwright test',async({browser})=>{
-   const context=await browser.newcontext();
+   const context=await browser.newContext();
 
  const page=await context.newPage();
  await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
@@ -35,7 +35,7 @@ test('Nagative playwright test',async({browser})=>{
 
 })
 
-test('second playwright test',async({browser,page})=>{
+test('second playwright test  @smoke',async({browser,page})=>{
  await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
 
 })

@@ -87,7 +87,7 @@ await page.locator('#checkout')
 
 })
 
-test.only('self practice test',async({browser})=>{
+test('self practice test',async({browser})=>{
 
 
 
